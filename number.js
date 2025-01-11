@@ -26,7 +26,7 @@ const num = new URLSearchParams(window.location.search).get("num");
         getRandomFact();
 
         async function getRandomFact() {
-          const response = await fetch(`https://numbersapi.com/${number}?json`);
+          const response = await fetch(`http://numbersapi.com/${number}?json`);
           const data = await response.json();
           factName.innerText = "Number";
           displayFact(data.text);
