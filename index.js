@@ -20,7 +20,7 @@ document
 
 async function getRandomFact() {
   const randomNum = Math.floor(Math.random() * 100);
-  const response = await fetch(`https://numbersapi.com/${randomNum}?json`);
+  const response = await fetch(`http://numbersapi.com/${randomNum}?json`);
   const data = await response.json();
   factName.innerText = "Number";
   displayFact(data.text);
