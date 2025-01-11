@@ -26,7 +26,7 @@ const num = new URLSearchParams(window.location.search).get("num");
         getRandomFact();
 
         async function getRandomFact() {
-          const response = await fetch(`http://numbersapi.com/${number}?json`);
+          const response = await fetch(`https://numbersapi.com/${number}?json`);
           const data = await response.json();
           factName.innerText = "Number";
           displayFact(data.text);
@@ -34,7 +34,7 @@ const num = new URLSearchParams(window.location.search).get("num");
 
         async function getMathFact() {
           const response = await fetch(
-            `http://numbersapi.com/${number}/math?json`
+            `https://numbersapi.com/${number}/math?json`
           );
           const data = await response.json();
           factName.innerText = "Math";
@@ -43,7 +43,7 @@ const num = new URLSearchParams(window.location.search).get("num");
 
         async function getTriviaFact() {
           const response = await fetch(
-            `http://numbersapi.com/${number}/trivia?json`
+            `https://numbersapi.com/${number}/trivia?json`
           );
           factName.innerText = "Trivia";
           const data = await response.json();
