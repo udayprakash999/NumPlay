@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    background-color: #e4e4e4;
+    color: #333;
+    height: 100vh;
+    width: 100%;
+
+  }
+  nav {
+    width: 100%;
+    height: 14vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  #logo {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  #anysearch {
+   position: relative;
+   top: 150px;
+   width: 100%;
+   display: flex;
+    justify-content: center;
+  }
+  #input {
+    background-color: rgba(0, 0, 0, 0.477);
+    padding: 0.4rem 1rem;
+    border-radius: 0.75rem;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  #input input {
+    border: none;
+    outline: none;
+    background: none;
+    color: aliceblue;
+  }
+  input::placeholder {
+    color: aliceblue;
+  }
+  #changeTheme {
+    padding: 0.5rem 1rem;
+  }
+
+  .buttons {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    width: 100%;
+    height:35vh;
+    padding: 1rem;
+    gap: 1rem;
+ }
+
+  button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 3rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  button:hover {
+    background: #2980b9;
+  }
+
+  button:active {
+    transform: scale(0.98);
+  }
+
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .dark-mode button {
+    background: #e74c3c;
+  }
+
+  .dark-mode h1 {
+    color: #f39c12;
+  }
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+   
+  }
+
+  h1 {
+    color: #3498db;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .fact {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  #numberInput{
+    font-size: 1.5rem;  
+     width: 100%;
+    height: 7vh;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 2rem;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .fas{
+    font-size: 2rem;
+  }
+  #searchIcon{
+    font-size: 2rem;
+  }
+  
+  #home{
+    font-size: 2rem;
+    padding: 4px;
+    border:none black solid;
+    border-radius: 20%;
+    background-color: rgba(134, 134, 134, 0.514);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      padding: 20px;
+      max-width: 700px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .fact {
+      font-size: 1rem;
+    }
+  
+    #numberInput {
+      font-size: 1.3rem;
+      height: 6vh;
+    }
+  }
+ 
+
+  
+  @media (max-width: 730px) {
+    #logo{
+      font-size: 2rem;
+    }
+    .buttons{
+      padding: 10px;
+    }
+    #input{
+      width: 90%;
+     }
+    
+  }
+  
+  @media (max-width: 430px) {
+
+   button{
+    padding: 10px;
+   }
+   #input{
+    width: 90%;
+   }
+  
+    
+  }
+  
+
+  

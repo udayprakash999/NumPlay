@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NumPlay:</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+  
+  </head>
+  <body>
+    <nav>
+      <div id="logo">NumPlay</div>
+     <div id="home"><a href="index.html"><i class="fa-solid fa-house"></i></a></div>
+        <button id="changeTheme"><i class="fas fa-lightbulb"></i></button>
+   
+     
+    </nav>
+
+    <div class="search-any-num">
+      <div id="anysearch">
+        
+        <div id="input">
+          <input
+            type="number"
+            id="numberInput"
+            placeholder="Enter random Number"
+          />
+          <i class="fas fa-search" id="searchIcon"></i>
+        </div>
+        <div>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+
+    <div class="container">
+      <div class="container-overlay" style="display: none;"></div>
+      <div class="content">
+        <h1>
+          <span id="name-fact">Number</span> Fact of <span id="number"></span>
+        </h1>
+        <p class="fact" id="fact">Click below to learn something fun!</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="getFact" class="tooltip"> <i class="fas fa-puzzle-piece"></i>  <span class="tooltiptext">Get Facts</span></button>
+      <button id="mathFact" class="tooltip" ><i class="fas fa-calculator"></i>  <span class="tooltiptext">Math Fact</span></button>
+      <button id="triviaFact" class="tooltip" ><i class="fas fa-question-circle"> </i>  <span class="tooltiptext">Trivia Fact</span></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.1/dist/gsap.min.js"></script>
+    <script src="number.js">
+      
+    </script>
+  </body>
+</html>
