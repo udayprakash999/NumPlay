@@ -20,7 +20,7 @@ document
 
 async function getRandomFact() {
   const randomNum = Math.floor(Math.random() * 100);
-  const response = await fetch(`http://numbersapi.com/${randomNum}?json`);
+  const response = await fetch(`https://numbersapi.com/${randomNum}?json`);
   const data = await response.json();
   factName.innerText = "Number";
   displayFact(data.text);
@@ -29,7 +29,7 @@ async function getRandomFact() {
 async function getMathFact() {
   const randomNum = Math.floor(Math.random() * 100);
   const response = await fetch(
-    `http://numbersapi.com/${randomNum}/math?json`
+    `https://numbersapi.com/${randomNum}/math?json`
   );
   const data = await response.json();
   factName.innerText = "Math";
@@ -39,7 +39,7 @@ async function getMathFact() {
 async function getTriviaFact() {
   const randomNum = Math.floor(Math.random() * 100);
   const response = await fetch(
-    `http://numbersapi.com/${randomNum}/trivia?json`
+    `https://numbersapi.com/${randomNum}/trivia?json`
   );
   factName.innerText = "Trivia";
   const data = await response.json();
@@ -49,7 +49,7 @@ async function getTriviaFact() {
 async function getYearFact() {
   const randomNum = Math.floor(Math.random() * 100);
   const response = await fetch(
-    `http://numbersapi.com/${randomNum}/year?json`
+    `https://numbersapi.com/${randomNum}/year?json`
   );
   factName.innerText = "Year";
   const data = await response.json();
@@ -60,7 +60,7 @@ async function getDateFact() {
   const month = Math.floor(Math.random() * 12) + 1;
   const day = Math.floor(Math.random() * 31) + 1;
   const response = await fetch(
-    `http://numbersapi.com/${month}/${day}/date?json`
+    `https://numbersapi.com/${month}/${day}/date?json`
   );
   factName.innerText = "Date";
   const data = await response.json();
